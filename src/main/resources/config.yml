@@ -1,0 +1,9 @@
+# Time between paydays (in minutes)
+interval-minutes: 30
+
+# Amount of money given
+online-amount: 250.0
+offline-amount: 20.0
+
+# Message sent to players who receive payment
+message: "<green>You have recieved <gold>{amount}$!</gold>"
