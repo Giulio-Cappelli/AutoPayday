@@ -1,4 +1,4 @@
-name: Build and Release AutoPayday
+name: Build and Release Plugin
 
 on:
   push:
@@ -27,10 +27,7 @@ jobs:
 
       - name: Build with Maven
         run: mvn clean package
-
-      - name: Rename jar to include version
-        run: mv target/AutoPayday-1.0.0.jar target/AutoPayday-${{ env.version }}.jar
-
+        
       - name: Upload jar artifact
         uses: actions/upload-artifact@v4
         with:
