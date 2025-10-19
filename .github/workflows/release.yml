@@ -2,8 +2,8 @@ name: Build and Release AutoPayday
 
 on:
   push:
-    branches:
-      - main
+    tags:
+      - 'v*'        # only run on tags like v1.2.3
   workflow_dispatch:
 
 jobs:
@@ -48,7 +48,7 @@ jobs:
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v1
         with:
-          tag_name: v${{ env.version }}
+          tag_name: ${{ github.ref_name }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
