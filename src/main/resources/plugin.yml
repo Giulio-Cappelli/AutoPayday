@@ -1,5 +1,5 @@
 name: AutoPayday
-version: '1.0.3'
+version: '1.0.4'
 main: com.giuliocappelli.autoPayday.AutoPayday
 author: Giulio Cappelli
 api-version: 1.21

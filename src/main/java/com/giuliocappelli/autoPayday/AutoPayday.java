@@ -85,7 +85,7 @@ public final class AutoPayday extends JavaPlugin {
             }
         }
 
-        getLogger().info("AutoPayday: payday given, online=" + iOnline + ", offline=" + iOffline);
+        getLogger().info("AutoPayday: Payday given, online=" + iOnline + ", offline=" + iOffline);
     }
 
     @Override
